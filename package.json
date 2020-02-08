@@ -26,10 +26,11 @@
     "cra-bundle-analyzer": "src/index.js"
   },
   "dependencies": {
+    "progress-bar-webpack-plugin": "^2.1.0",
     "webpack-bundle-analyzer": "^3.6.0"
   },
   "peerDependencies": {
-    "react-dev-utils": ">=10",
+    "chalk": ">=3",
     "react-scripts": ">=3",
     "webpack": ">=4"
   }

@@ -27,6 +27,7 @@ This command will generate the webpack-bundle-analyzer report in `build/report.h
 
 - [Github Issue #6904: --stats flag is gone in v3?](https://github.com/facebook/create-react-app/issues/6904)
 - [Github Issue #3518: webpack-bundle-analyzer without ejecting.](https://github.com/facebook/create-react-app/issues/3518)
+- [Medium @romanonthego: webpack-bundle-analyzer for create-react-app](https://medium.com/@romanonthego/webpack-bundle-analyzer-for-create-react-app-9aebb0d01084)
 
 [npm]: https://img.shields.io/npm/v/cra-bundle-analyzer.svg
 [npm-url]: https://npmjs.com/package/cra-bundle-analyzer

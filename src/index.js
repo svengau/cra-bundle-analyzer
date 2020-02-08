@@ -1,14 +1,15 @@
 #!/usr/bin/env node
 "use strict";
 
-// https://github.com/facebook/create-react-app/issues/3518
 process.env.NODE_ENV = "production";
 
 const webpack = require("webpack");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
+const ProgressBarPlugin = require("progress-bar-webpack-plugin");
+const chalk = require("chalk");
 
-const webpackConfig = require(`${process.env.PWD}/node_modules/react-scripts/config/webpack.config`);
+const webpackConfig = require("react-scripts/config/webpack.config");
 
 async function main() {
   const config = webpackConfig("production");
@@ -16,6 +17,17 @@ async function main() {
     new BundleAnalyzerPlugin({
       analyzerMode: "static",
       reportFilename: "report.html"
+    })
+  );
+
+  const green = text => {
+    return chalk.green.bold(text);
+  };
+  config.plugins.push(
+    new ProgressBarPlugin({
+      format: `${green("analyzing...")} ${green("[:bar]")}${green(
+        "[:percent]"
+      )}${green("[:elapsed seconds]")} - :msg`
     })
   );
 
