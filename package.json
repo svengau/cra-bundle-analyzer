@@ -4,6 +4,23 @@
   "author": "Sven Gaubert",
   "description": "Use Webpack Bundle Analyzer on a create-react-app application without ejecting",
   "main": "src/index.js",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "minification",
+    "webpack",
+    "bundle",
+    "analyzer",
+    "modules",
+    "size"
+  ],
+  "engines": {
+    "node": ">= 10"
+  },
+  "bugs": {
+    "url": "https://github.com/svengau/cra-bundle-analyzer/issues"
+  },
+  "homepage": "https://github.com/svengau/cra-bundle-analyzer#readme",
   "license": "MIT",
   "bin": {
     "cra-bundle-analyzer": "src/index.js"
@@ -12,8 +29,8 @@
     "webpack-bundle-analyzer": "^3.6.0"
   },
   "peerDependencies": {
-    "react-dev-utils": "^10.1.0",
-    "react-scripts": "^3.3.1",
-    "webpack": "^4.41.5"
+    "react-dev-utils": ">=10",
+    "react-scripts": ">=3",
+    "webpack": ">=4"
   }
 }
