@@ -1,0 +1,19 @@
+{
+  "name": "cra-bundle-analyzer",
+  "version": "0.0.1",
+  "author": "Sven Gaubert",
+  "description": "Use Webpack Bundle Analyzer on a create-react-app application without ejecting",
+  "main": "src/index.js",
+  "license": "MIT",
+  "bin": {
+    "cra-bundle-analyzer": "src/index.js"
+  },
+  "dependencies": {
+    "webpack-bundle-analyzer": "^3.6.0"
+  },
+  "peerDependencies": {
+    "react-dev-utils": "^10.1.0",
+    "react-scripts": "^3.3.1",
+    "webpack": "^4.41.5"
+  }
+}

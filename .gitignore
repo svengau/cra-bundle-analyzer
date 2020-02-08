@@ -1,0 +1,20 @@
+# fs
+.DS_Store
+.rpt2_cache
+
+# Logs
+logs
+*.log
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+
+# webstorm
+.idea/
+
+# alm editor
+.alm
+
+*.log
+.history
