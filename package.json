@@ -26,6 +26,7 @@
     "cra-bundle-analyzer": "src/index.js"
   },
   "dependencies": {
+    "minimist": "^1.2.5",
     "progress-bar-webpack-plugin": "^2.1.0",
     "webpack-bundle-analyzer": "^3.6.0"
   },

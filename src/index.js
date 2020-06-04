@@ -8,15 +8,21 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
 const ProgressBarPlugin = require("progress-bar-webpack-plugin");
 const chalk = require("chalk");
-
+const minimist = require("minimist");
 const webpackConfig = require("react-scripts/config/webpack.config");
+
+const args = minimist(process.argv.slice(2), {
+  alias: {
+    r: "reportFilename",
+  },
+});
 
 async function main() {
   const config = webpackConfig("production");
   config.plugins.push(
     new BundleAnalyzerPlugin({
       analyzerMode: "static",
-      reportFilename: "../public/report_test.html",
+      reportFilename: args.reportFilename,
     })
   );
 
