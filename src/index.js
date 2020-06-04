@@ -16,18 +16,18 @@ async function main() {
   config.plugins.push(
     new BundleAnalyzerPlugin({
       analyzerMode: "static",
-      reportFilename: "report.html"
+      reportFilename: "../public/report_test.html",
     })
   );
 
-  const green = text => {
+  const green = (text) => {
     return chalk.green.bold(text);
   };
   config.plugins.push(
     new ProgressBarPlugin({
       format: `${green("analyzing...")} ${green("[:bar]")}${green(
         "[:percent]"
-      )}${green("[:elapsed seconds]")} - :msg`
+      )}${green("[:elapsed seconds]")} - :msg`,
     })
   );
 
@@ -52,7 +52,7 @@ async function main() {
 
         messages = {
           errors: [errMessage],
-          warnings: []
+          warnings: [],
         };
       } else {
         messages = stats.toJson({ all: false, warnings: true, errors: true });
@@ -82,7 +82,7 @@ async function main() {
 
       return resolve({
         stats,
-        warnings: messages.warnings
+        warnings: messages.warnings,
       });
     });
   });
