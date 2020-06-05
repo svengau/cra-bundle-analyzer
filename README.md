@@ -23,6 +23,12 @@ npx cra-bundle-analyzer
 
 This command will generate the webpack-bundle-analyzer report in `build/report.html`
 
+## Options
+
+```
+  -r, --reportFilename <file>         Path to bundle report file that will be generated in `static` mode. (default: report.html)
+```
+
 ## References
 
 - [Github Issue #6904: --stats flag is gone in v3?](https://github.com/facebook/create-react-app/issues/6904)
