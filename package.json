@@ -1,6 +1,6 @@
 {
   "name": "cra-bundle-analyzer",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "author": "Sven Gaubert",
   "description": "Use Webpack Bundle Analyzer on a create-react-app application without ejecting",
   "main": "src/index.js",
